@@ -13,7 +13,8 @@ export default {
   title: 'Button',
   argTypes: {
     color: {
-      control: 'text',
+      control: 'select',
+      options: ['primary', 'secondary', 'success', 'warn', 'error'],
       defaultValue: 'primary',
     },
     text: {
@@ -21,7 +22,8 @@ export default {
       defaultValue: 'Button',
     },
     size: {
-      control: 'text',
+      control: 'select',
+      options: ['small', 'medium', 'large'],
       defaultValue: 'medium',
     },
     disabled: {
