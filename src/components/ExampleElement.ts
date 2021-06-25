@@ -1,5 +1,5 @@
-import { LitElement, html, css } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import {LitElement, html, css} from 'lit';
+import {customElement, property} from 'lit/decorators.js';
 import theme from '../styles/theme';
 
 @customElement('example-element')
@@ -11,7 +11,7 @@ export default class ExampleComponent extends LitElement {
         display: block;
         color: var(--theme-primary);
       }
-    `
+    `,
   ];
 
   @property() name = 'Lit Ui Library';

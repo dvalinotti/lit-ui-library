@@ -1,4 +1,4 @@
-import { css } from 'lit';
+import {css} from 'lit';
 
 /**
  * Global Styles - can be imported in Lit components and referenced in your style definition.
