@@ -1,6 +1,12 @@
 {
   "extends": [
     "./node_modules/gts/",
-    "plugin:lit/recommended"
-  ]
+    "plugin:lit/recommended",
+    "plugin:wc/recommended"
+  ],
+  "settings": {
+    "wc": {
+      "elementBaseClass": "LitElement"
+    }
+  }
 }
