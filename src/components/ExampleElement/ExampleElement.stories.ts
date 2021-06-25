@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/web-components';
 import { html, TemplateResult } from 'lit-html';
-import { ExampleElementProps } from './index';
-import './index';
+import { ExampleElementProps } from './ExampleElement';
+import './ExampleElement';
 
 export default {
   title: 'Example/ExampleElement',

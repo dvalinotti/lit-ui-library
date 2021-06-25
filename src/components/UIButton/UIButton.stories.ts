@@ -1,10 +1,10 @@
 import { Meta } from '@storybook/web-components';
 import { html, TemplateResult } from 'lit-html';
-import { UIButtonProps } from './index';
-import './index';
+import { UIButtonProps } from './UIButton';
+import './UIButton';
 
 export default {
-  title: 'Button/UIButton',
+  title: 'Button',
   argTypes: {
     text: {
       control: 'text',
@@ -13,6 +13,10 @@ export default {
   }
 } as Meta;
 
-export const Primary = (props: UIButtonProps): TemplateResult<1> => html`<ui-button text=${props.text}></ui-button>`
+export const Primary = (props: UIButtonProps): TemplateResult<1> => html`
+  <ui-button text=${props.text}></ui-button>
+`;
 
-export const Secondary = (props: UIButtonProps): TemplateResult<1> => html`<ui-button color="secondary" text=${props.text}></ui-button>`
+export const Secondary = (props: UIButtonProps): TemplateResult<1> => html`
+  <ui-button color="secondary" text=${props.text}></ui-button>
+`;
