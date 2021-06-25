@@ -5,9 +5,18 @@ import {css} from 'lit';
  */
 export default css`
   :host {
-    --theme-primary: #4287f5;
-    --theme-secondary: #f7a240;
+    --theme-primary: #1082a8;
+    --theme-primary-hv: #0c6583;
+    --theme-secondary: #ff6333;
+    --theme-secondary-hv: #dc562e;
+    --theme-success: #05c793;
+    --theme-success-hv: #05b384;
+    --theme-warn: #ffd166;
+    --theme-warn-hv: #ffc847;
+    --theme-error: #f15555;
+    --theme-error-hv: #f04242;
     --theme-text: #0f0f0f;
+    --theme-text-white: #ffffff;
     --theme-bg: #fafafa;
 
     --shadow-sm: 0px 1px 4px 0px rgba(0, 0, 0, 0.175);

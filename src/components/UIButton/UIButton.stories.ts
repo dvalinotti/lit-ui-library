@@ -1,22 +1,101 @@
-import { Meta } from '@storybook/web-components';
-import { html, TemplateResult } from 'lit-html';
-import { UIButtonProps } from './UIButton';
+import {Story, Meta} from '@storybook/web-components';
+import {html} from 'lit-html';
 import './UIButton';
+
+type UIButtonArgs = {
+  text: string;
+  color: string;
+  size: string;
+  disabled: boolean;
+};
 
 export default {
   title: 'Button',
   argTypes: {
+    color: {
+      control: 'text',
+      defaultValue: 'primary',
+    },
     text: {
       control: 'text',
-      defaultValue: 'StoryBook'
-    }
-  }
+      defaultValue: 'Button',
+    },
+    size: {
+      control: 'text',
+      defaultValue: 'medium',
+    },
+    disabled: {
+      control: 'boolean',
+      defaultValue: false,
+    },
+  },
 } as Meta;
 
-export const Primary = (props: UIButtonProps): TemplateResult<1> => html`
-  <ui-button text=${props.text}></ui-button>
+const Template: Story<UIButtonArgs> = (props: UIButtonArgs) => html`
+  <ui-button
+    color=${props.color}
+    size=${props.size}
+    ?disabled=${props.disabled}
+  >
+    ${props.text}
+  </ui-button>
 `;
 
-export const Secondary = (props: UIButtonProps): TemplateResult<1> => html`
-  <ui-button color="secondary" text=${props.text}></ui-button>
-`;
+export const Primary = Template.bind({});
+Primary.args = {
+  color: 'primary',
+  text: 'Primary',
+  disabled: false,
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  color: 'secondary',
+  text: 'Secondary',
+  disabled: false,
+};
+
+export const Success = Template.bind({});
+Success.args = {
+  color: 'success',
+  text: 'Success',
+  disabled: false,
+};
+
+export const Warning = Template.bind({});
+Warning.args = {
+  color: 'warn',
+  text: 'Warning',
+  disabled: false,
+};
+
+export const Error = Template.bind({});
+Error.args = {
+  color: 'error',
+  text: 'Error',
+  disabled: false,
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  color: 'primary',
+  text: 'Small',
+  size: 'small',
+  disabled: false,
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+  color: 'primary',
+  text: 'Medium',
+  size: 'medium',
+  disabled: false,
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  color: 'primary',
+  text: 'Large',
+  size: 'large',
+  disabled: false,
+};
