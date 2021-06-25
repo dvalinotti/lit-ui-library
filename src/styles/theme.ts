@@ -8,11 +8,11 @@ export default css`
     --theme-primary: #1082a8;
     --theme-primary-hv: #0c6583;
     --theme-secondary: #ff6333;
-    --theme-secondary-hv: #dc562e;
+    --theme-secondary-hv: #ff430a;
     --theme-success: #05c793;
     --theme-success-hv: #05b384;
-    --theme-warn: #ffd166;
-    --theme-warn-hv: #ffc847;
+    --theme-warn: #ffc847;
+    --theme-warn-hv: #ffbc1f;
     --theme-error: #f15555;
     --theme-error-hv: #f04242;
     --theme-text: #0f0f0f;
