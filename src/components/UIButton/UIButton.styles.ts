@@ -43,6 +43,6 @@ export default css`
   }
   :host button:hover {
     cursor: pointer;
-    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.125);
+    box-shadow: var(--shadow-sm);
   }
 `;
