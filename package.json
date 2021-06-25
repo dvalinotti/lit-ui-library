@@ -15,19 +15,16 @@
     "build": "vite build",
     "lint": "gts lint",
     "clean": "gts clean",
-    "compile": "tsc",
-    "fix": "gts fix",
-    "prepare": "yarn run compile",
-    "pretest": "yarn run compile",
-    "posttest": "yarn run lint"
+    "fix": "gts fix"
   },
   "dependencies": {
     "lit": "^2.0.0-rc.2"
   },
   "devDependencies": {
     "@types/node": "^15.12.2",
-    "vite": "^2.3.7",
+    "eslint-plugin-lit": "^1.5.1",
     "gts": "^3.1.0",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "vite": "^2.3.7"
   }
 }
