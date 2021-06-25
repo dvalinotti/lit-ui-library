@@ -16,8 +16,8 @@
     "lint": "gts lint",
     "clean": "gts clean",
     "fix": "gts fix",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "sb": "start-storybook -p 6006",
+    "build-sb": "build-storybook"
   },
   "dependencies": {
     "lit": "^2.0.0-rc.2"
