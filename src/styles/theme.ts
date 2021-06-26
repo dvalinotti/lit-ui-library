@@ -18,6 +18,9 @@ export default css`
     --theme-text: #0f0f0f;
     --theme-text-white: #ffffff;
     --theme-bg: #fafafa;
+    --theme-lightgray: #d0d0d0;
+
+    --theme-rounded: 0.5rem;
 
     --shadow-sm: 0px 1px 4px 0px rgba(0, 0, 0, 0.175);
     --shadow-md: 0px 2px 4px 2px rgba(0, 0, 0, 0.175);

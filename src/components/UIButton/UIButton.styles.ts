@@ -8,7 +8,7 @@ export default css`
     color: white;
     border: none;
     background-color: var(--theme-primary); /* default */
-    border-radius: 0.5rem;
+    border-radius: var(--theme-rounded);
     transition: all 0.25s;
   }
   :host([color='primary']) button {
@@ -16,6 +16,11 @@ export default css`
   }
   :host([color='secondary']) button {
     background-color: var(--theme-secondary);
+  }
+  :host([color='white']) button {
+    background-color: var(--theme-bg);
+    border: 1px solid var(--theme-lightgray);
+    color: var(--theme-text);
   }
   :host([color='success']) button {
     background-color: var(--theme-success);
@@ -48,6 +53,9 @@ export default css`
   }
   :host([color='secondary']) button:hover {
     background-color: var(--theme-secondary-hv);
+  }
+  :host([color='white']) button:hover {
+    background-color: var(--theme-lightgray);
   }
   :host([color='success']) button:hover {
     background-color: var(--theme-success-hv);
