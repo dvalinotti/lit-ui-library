@@ -7,8 +7,8 @@ export default css`
   :host {
     --theme-primary: #1082a8;
     --theme-primary-hv: #0c6583;
-    --theme-secondary: #ff6333;
-    --theme-secondary-hv: #ff430a;
+    --theme-secondary: #eb1e7a;
+    --theme-secondary-hv: #ce1267;
     --theme-success: #05c793;
     --theme-success-hv: #05b384;
     --theme-warn: #ffc847;
