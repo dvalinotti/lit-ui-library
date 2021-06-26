@@ -28,7 +28,7 @@ export default {
     },
     size: {
       control: 'select',
-      options: ['small', 'medium', 'large'],
+      options: ['small', 'medium', 'large', 'full'],
       defaultValue: 'small',
     },
     sentences: {
@@ -78,6 +78,13 @@ export const Large = Template.bind({});
 Large.args = {
   active: true,
   size: 'large',
+  sentences: 12,
+};
+
+export const FullScreen = Template.bind({});
+FullScreen.args = {
+  active: true,
+  size: 'full',
   sentences: 12,
 };
 

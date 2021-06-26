@@ -34,23 +34,34 @@ export default css`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  :host([size='small']) .ui-modal-window {
+  :host([size='small']) .ui-modal .ui-modal-window {
     max-width: 320px;
     max-height: 160px;
   }
-  :host([size='medium']) .ui-modal-window {
+  :host([size='medium']) .ui-modal .ui-modal-window {
     max-width: 425px;
     max-height: 240px;
   }
-  :host([size='large']) .ui-modal-window {
+  :host([size='large']) .ui-modal .ui-modal-window {
     max-width: 500px;
     max-height: 500px;
+  }
+  :host([size='full']) .ui-modal .ui-modal-window {
+    max-width: unset;
+    max-height: unset;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 0;
   }
   .ui-modal-nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .ui-modal-close span {
+    line-height: 1.125;
+    font-weight: bold;
   }
   .ui-modal-title {
     font-size: 1.5rem;

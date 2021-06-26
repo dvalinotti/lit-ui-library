@@ -15,7 +15,7 @@ export class UIModal extends LitElement {
   size = 'small';
 
   @property({type: String})
-  title = 'Modal';
+  title = '';
 
   static styles = [theme, styles];
 
@@ -39,7 +39,7 @@ export class UIModal extends LitElement {
               class="ui-modal-close"
               @click="${this._toggleActive}"
             >
-              &times;
+              <span>&times;</span>
             </ui-button>
           </div>
           <div class="ui-modal-content">
