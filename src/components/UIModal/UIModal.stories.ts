@@ -4,7 +4,9 @@ import './UIModal';
 
 type UIModalArgs = {
   active: boolean;
+  rounded: boolean;
   size: string;
+  title: string;
 };
 
 export default {
@@ -13,6 +15,14 @@ export default {
     active: {
       control: 'boolean',
       defaultValue: true,
+    },
+    rounded: {
+      control: 'boolean',
+      defaultValue: true,
+    },
+    title: {
+      control: 'text',
+      defaultValue: 'UIModal',
     },
     size: {
       control: 'select',
@@ -23,10 +33,25 @@ export default {
 } as Meta;
 
 const Template: Story<UIModalArgs> = (props: UIModalArgs) => html`
-  <ui-modal .active=${props.active} size=${props.size}>
+  <ui-modal
+    .active=${props.active}
+    .rounded=${props.rounded}
+    size=${props.size}
+    title=${props.title}
+  >
     <h1>Storybook</h1>
   </ui-modal>
 `;
+
+export const Visible = Template.bind({});
+Visible.args = {
+  active: true,
+};
+
+export const Hidden = Template.bind({});
+Hidden.args = {
+  active: false,
+};
 
 export const Small = Template.bind({});
 Small.args = {
@@ -44,4 +69,16 @@ export const Large = Template.bind({});
 Large.args = {
   active: true,
   size: 'large',
+};
+
+export const Rounded = Template.bind({});
+Rounded.args = {
+  active: true,
+  rounded: true,
+};
+
+export const Squared = Template.bind({});
+Squared.args = {
+  active: true,
+  rounded: false,
 };

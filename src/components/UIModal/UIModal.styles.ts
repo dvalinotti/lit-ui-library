@@ -19,28 +19,32 @@ export default css`
     visibility: hidden;
     transition: all 0.25s;
   }
-  .ui-modal[active] {
+  :host([active]) .ui-modal {
     opacity: 1;
     visibility: visible;
   }
-  .ui-modal[size='small'] .ui-modal-window {
-    max-width: 320px;
-    max-height: 160px;
-  }
-  .ui-modal[size='medium'] .ui-modal-window {
-    max-width: 425px;
-    max-height: 240px;
+  :host([rounded]) .ui-modal .ui-modal-window {
+    border-radius: var(--theme-rounded-md);
   }
   .ui-modal-window {
     width: 100%;
     height: 100%;
-    max-width: 500px;
-    max-height: 500px;
     background: var(--theme-bg);
     padding: 1rem;
-    border-radius: var(--theme-rounded-md);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  :host([size='small']) .ui-modal-window {
+    max-width: 320px;
+    max-height: 160px;
+  }
+  :host([size='medium']) .ui-modal-window {
+    max-width: 425px;
+    max-height: 240px;
+  }
+  :host([size='large']) .ui-modal-window {
+    max-width: 500px;
+    max-height: 500px;
   }
   .ui-modal-nav {
     width: 100%;
