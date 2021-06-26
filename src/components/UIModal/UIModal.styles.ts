@@ -27,8 +27,8 @@ export default css`
     border-radius: var(--theme-rounded-md);
   }
   .ui-modal-window {
-    width: 100%;
-    height: 100%;
+    width: calc(100% - 45px);
+    height: calc(100% - 45px);
     background: var(--theme-bg);
     padding: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
