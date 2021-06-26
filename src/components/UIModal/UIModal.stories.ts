@@ -1,5 +1,6 @@
 import {Story, Meta} from '@storybook/web-components';
 import {html} from 'lit-html';
+import {loremIpsum} from '../utils/storybook';
 import './UIModal';
 
 type UIModalArgs = {
@@ -7,6 +8,7 @@ type UIModalArgs = {
   rounded: boolean;
   size: string;
   title: string;
+  sentences: number;
 };
 
 export default {
@@ -29,6 +31,10 @@ export default {
       options: ['small', 'medium', 'large'],
       defaultValue: 'small',
     },
+    sentences: {
+      control: 'number',
+      defaultValue: 1,
+    },
   },
 } as Meta;
 
@@ -40,6 +46,7 @@ const Template: Story<UIModalArgs> = (props: UIModalArgs) => html`
     title=${props.title}
   >
     <h1>Storybook</h1>
+    <p>${loremIpsum(props.sentences)}</p>
   </ui-modal>
 `;
 
@@ -57,18 +64,21 @@ export const Small = Template.bind({});
 Small.args = {
   active: true,
   size: 'small',
+  sentences: 1,
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
   active: true,
   size: 'medium',
+  sentences: 4,
 };
 
 export const Large = Template.bind({});
 Large.args = {
   active: true,
   size: 'large',
+  sentences: 12,
 };
 
 export const Rounded = Template.bind({});
