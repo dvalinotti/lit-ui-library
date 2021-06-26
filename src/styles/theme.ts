@@ -20,7 +20,9 @@ export default css`
     --theme-bg: #fafafa;
     --theme-lightgray: #d0d0d0;
 
-    --theme-rounded: 0.5rem;
+    --theme-rounded-sm: 0.25rem;
+    --theme-rounded-md: 0.5rem;
+    --theme-rounded-lg: 1rem;
 
     --shadow-sm: 0px 1px 4px 0px rgba(0, 0, 0, 0.175);
     --shadow-md: 0px 2px 4px 2px rgba(0, 0, 0, 0.175);

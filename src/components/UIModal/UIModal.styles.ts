@@ -38,7 +38,7 @@ export default css`
     max-height: 500px;
     background: var(--theme-bg);
     padding: 1rem;
-    border-radius: var(--theme-rounded);
+    border-radius: var(--theme-rounded-md);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }

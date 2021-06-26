@@ -21,10 +21,19 @@ export class UIModal extends LitElement {
     this.active = !this.active;
   }
 
+  _handleClickInside(e: MouseEvent) {
+    e.stopPropagation();
+  }
+
   render() {
     return html`
-      <div class="ui-modal" ?active=${this.active} size=${this.size}>
-        <div class="ui-modal-window">
+      <div
+        class="ui-modal"
+        ?active=${this.active}
+        size=${this.size}
+        @click="${this._toggleActive}"
+      >
+        <div class="ui-modal-window" @click="${this._handleClickInside}">
           <div class="ui-modal-nav">
             <p class="ui-modal-title">${this.title}</p>
             <ui-button

@@ -8,7 +8,7 @@ export default css`
     color: white;
     border: none;
     background-color: var(--theme-primary); /* default */
-    border-radius: var(--theme-rounded);
+    border-radius: var(--theme-rounded-md);
     transition: all 0.25s;
   }
   :host([color='primary']) button {
