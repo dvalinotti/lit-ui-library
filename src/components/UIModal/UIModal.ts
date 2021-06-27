@@ -4,7 +4,7 @@ import theme from '../../styles/theme';
 import styles from './UIModal.styles';
 
 @customElement('ui-modal')
-export class UIModal extends LitElement {
+export default class UIModal extends LitElement {
   @property({type: Boolean, reflect: true})
   active: boolean = false;
 
@@ -27,6 +27,8 @@ export class UIModal extends LitElement {
   _handleClickInside(e: MouseEvent) {
     e.stopPropagation();
   }
+
+  // TODO: Dispatch 'open' + 'close' event when active attr changes
 
   render() {
     return html`
