@@ -1,6 +1,9 @@
 {
   "name": "lit-ui-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "files": [
+    "dist"
+  ],
   "main": "./dist/lit-ui-library.umd.js",
   "module": "./dist/lit-ui-library.es.js",
   "exports": {
