@@ -19,7 +19,8 @@ export default css`
     visibility: hidden;
     transition: all 0.25s;
   }
-  :host([active]) .ui-modal {
+  :host([active='true']) .ui-modal,
+  :host([active='']) .ui-modal {
     opacity: 1;
     visibility: visible;
   }

@@ -19,16 +19,36 @@ export default class UIModal extends LitElement {
 
   static styles = [theme, styles];
 
+  attributeChangedCallback(
+    name: string,
+    _old: string | null,
+    value: string | null
+  ) {
+    super.attributeChangedCallback(name, _old, value);
+    if (name === 'active') {
+      this._dispatchActiveEvent(value);
+    }
+  }
+
   _toggleActive(e: MouseEvent) {
     e.preventDefault();
     this.active = !this.active;
   }
 
+  _dispatchActiveEvent(isActive: string | null) {
+    const eventType =
+      isActive === '' || isActive === 'true' ? 'opened' : 'closed';
+    const activeEvent = new CustomEvent(eventType, {
+      bubbles: true,
+      composed: true,
+    });
+
+    this.dispatchEvent(activeEvent);
+  }
+
   _handleClickInside(e: MouseEvent) {
     e.stopPropagation();
   }
-
-  // TODO: Dispatch 'open' + 'close' event when active attr changes
 
   render() {
     return html`
