@@ -5,6 +5,9 @@ import {css} from 'lit';
  */
 export default css`
   :host {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     --theme-primary: #1082a8;
     --theme-primary-hv: #0c6583;
     --theme-secondary: #eb1e7a;

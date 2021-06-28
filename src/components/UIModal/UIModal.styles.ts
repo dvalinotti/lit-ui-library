@@ -32,8 +32,6 @@ export default css`
     height: calc(100% - 45px);
     background: var(--theme-bg);
     padding: 1rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   :host([size='small']) .ui-modal .ui-modal-window {
     max-width: 320px;
