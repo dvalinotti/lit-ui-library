@@ -2,7 +2,7 @@ import {legacyPlugin} from '@web/dev-server-legacy';
 
 export default {
   rootDir: '.',
-  files: ['./src/**/*.test.{js,ts}'],
+  files: ['./tests/**/*.spec.{js,ts}'],
   nodeResolve: true,
   preserveSymlinks: true,
   plugins: [
