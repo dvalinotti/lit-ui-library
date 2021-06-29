@@ -1,14 +1,8 @@
 import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
+import {isValidColor} from '../utils/colors';
 import theme from '../../styles/theme';
 import styles from './UIButton.styles';
-
-function isValidColor(value: string | null) {
-  return (
-    value !== null &&
-    ['primary', 'secondary', 'success', 'warn', 'error'].includes(value)
-  );
-}
 
 function isValidSize(value: string | null) {
   return value !== null && ['small', 'medium', 'large'].includes(value);
