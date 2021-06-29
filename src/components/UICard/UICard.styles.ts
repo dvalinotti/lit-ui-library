@@ -31,11 +31,15 @@ export default css`
     width: 100%;
     overflow: hidden;
   }
+  .card-img.has-img {
+    aspect-ratio: 16 / 7;
+  }
   ::slotted(img) {
-    aspect-ratio: 16 / 6;
-    object-fit: cover;
-    object-position: center;
     width: 100%;
     height: 100%;
+    transition: all 250ms;
+  }
+  .card:hover ::slotted(img) {
+    transform: scale(1.25);
   }
 `;
