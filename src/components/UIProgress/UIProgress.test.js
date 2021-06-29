@@ -1,5 +1,5 @@
-import {fixture, expect, html} from '@open-wc/testing';
-// import {html} from 'lit/static-html.js';
+import {fixture, expect} from '@open-wc/testing';
+import {html} from 'lit/static-html.js';
 
 const getTestElement = async () => {
   return fixture(
