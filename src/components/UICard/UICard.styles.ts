@@ -27,4 +27,15 @@ export default css`
     border-radius: var(--theme-rounded-md);
     transition: all 250ms;
   }
+  .card-img {
+    width: 100%;
+    overflow: hidden;
+  }
+  ::slotted(img) {
+    aspect-ratio: 16 / 6;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
 `;

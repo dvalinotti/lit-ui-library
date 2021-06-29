@@ -6,6 +6,8 @@ import './UICard';
 type UICardArgs = {
   size: string;
   hoverable: boolean;
+  imageSrc: string;
+  imageAlt: string;
 };
 
 export default {
@@ -20,11 +22,22 @@ export default {
       type: 'boolean',
       default: true,
     },
+    imageSrc: {
+      type: 'text',
+      defaultValue: '',
+    },
+    imageAlt: {
+      type: 'text',
+      defaultValue: '',
+    },
   },
 } as Meta;
 
 const Template: Story<UICardArgs> = (props: UICardArgs) => html`
-  <ui-card size=${props.size} .hoverable=${props.hoverable}>
+  <ui-card size=${props.size} ?hoverable=${props.hoverable}>
+    ${props.imageSrc !== ''
+      ? html`<img slot="img" src=${props.imageSrc} alt=${props.imageAlt} />`
+      : html``}
     <h2 slot="title">UICard</h2>
     <p>${loremIpsum(2)}</p>
     <div slot="footer" style="display: flex; gap: 0.5rem;">
@@ -56,7 +69,28 @@ export const Hoverable = Template.bind({});
 Hoverable.args = {
   hoverable: true,
 };
+
 export const NotHoverable = Template.bind({});
 NotHoverable.args = {
   hoverable: false,
+};
+
+export const WithImage = Template.bind({});
+WithImage.args = {
+  imageSrc: 'https://via.placeholder.com/320x180',
+  imageAlt: 'Image alt text',
+};
+
+export const SmallWithImage = Template.bind({});
+SmallWithImage.args = {
+  size: 'small',
+  imageSrc: 'https://via.placeholder.com/320x180',
+  imageAlt: 'Image alt text',
+};
+
+export const LargeWithImage = Template.bind({});
+LargeWithImage.args = {
+  size: 'large',
+  imageSrc: 'https://via.placeholder.com/320x180',
+  imageAlt: 'Image alt text',
 };

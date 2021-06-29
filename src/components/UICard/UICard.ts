@@ -16,6 +16,9 @@ export default class UICard extends LitElement {
   render() {
     return html`
       <article class="card">
+        <div class="card-img">
+          <slot name="img"></slot>
+        </div>
         <header class="card-title"><slot name="title"></slot></header>
         <section class="card-body">
           <slot></slot>
