@@ -32,7 +32,7 @@ export default css`
     overflow: hidden;
   }
   .card-img.has-img {
-    aspect-ratio: 16 / 7;
+    aspect-ratio: 16 / 6;
   }
   ::slotted(img) {
     width: 100%;
