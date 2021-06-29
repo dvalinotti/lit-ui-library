@@ -1,0 +1,1003 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "dist/lit-ui-library.es.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "e"
+        },
+        {
+          "kind": "variable",
+          "name": "t"
+        },
+        {
+          "kind": "variable",
+          "name": "o"
+        },
+        {
+          "kind": "variable",
+          "name": "r"
+        },
+        {
+          "kind": "variable",
+          "name": "y"
+        },
+        {
+          "kind": "variable",
+          "name": "z"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "o",
+          "declaration": {
+            "name": "r",
+            "module": "dist/lit-ui-library.es.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "e",
+          "declaration": {
+            "name": "t",
+            "module": "dist/lit-ui-library.es.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "UIButton",
+          "declaration": {
+            "name": "y",
+            "module": "dist/lit-ui-library.es.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "UIModal",
+          "declaration": {
+            "name": "z",
+            "module": "dist/lit-ui-library.es.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/lit-ui-library.umd.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "o",
+          "parameters": [
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "variable",
+          "name": "r"
+        },
+        {
+          "kind": "variable",
+          "name": "t"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "o",
+          "declaration": {
+            "name": "r",
+            "module": "dist/lit-ui-library.umd.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "e",
+          "declaration": {
+            "name": "t",
+            "module": "dist/lit-ui-library.umd.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "UIButton",
+          "declaration": {
+            "name": "default",
+            "module": "./components/UIButton/UIButton"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "UIModal",
+          "declaration": {
+            "name": "default",
+            "module": "./components/UIModal/UIModal"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "UICard",
+          "declaration": {
+            "name": "default",
+            "module": "./components/UICard/UICard"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/styles/theme.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/styles/theme.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UIButton/UIButton.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Primary"
+        },
+        {
+          "kind": "variable",
+          "name": "Secondary"
+        },
+        {
+          "kind": "variable",
+          "name": "Success"
+        },
+        {
+          "kind": "variable",
+          "name": "Warning"
+        },
+        {
+          "kind": "variable",
+          "name": "Error"
+        },
+        {
+          "kind": "variable",
+          "name": "Small"
+        },
+        {
+          "kind": "variable",
+          "name": "Medium"
+        },
+        {
+          "kind": "variable",
+          "name": "Large"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/components/UIButton/UIButton.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Primary",
+          "declaration": {
+            "name": "Primary",
+            "module": "src/components/UIButton/UIButton.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Secondary",
+          "declaration": {
+            "name": "Secondary",
+            "module": "src/components/UIButton/UIButton.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Success",
+          "declaration": {
+            "name": "Success",
+            "module": "src/components/UIButton/UIButton.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Warning",
+          "declaration": {
+            "name": "Warning",
+            "module": "src/components/UIButton/UIButton.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Error",
+          "declaration": {
+            "name": "Error",
+            "module": "src/components/UIButton/UIButton.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Small",
+          "declaration": {
+            "name": "Small",
+            "module": "src/components/UIButton/UIButton.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Medium",
+          "declaration": {
+            "name": "Medium",
+            "module": "src/components/UIButton/UIButton.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Large",
+          "declaration": {
+            "name": "Large",
+            "module": "src/components/UIButton/UIButton.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UIButton/UIButton.styles.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/components/UIButton/UIButton.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UIButton/UIButton.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "default",
+          "members": [
+            {
+              "kind": "field",
+              "name": "color",
+              "default": "'primary'"
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "default": "'medium'"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "default": "false"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "color",
+              "default": "'primary'",
+              "fieldName": "color"
+            },
+            {
+              "name": "size",
+              "default": "'medium'",
+              "fieldName": "size"
+            },
+            {
+              "name": "disabled",
+              "default": "false",
+              "fieldName": "disabled"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "default",
+            "module": "src/components/UIButton/UIButton.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "ui-button",
+          "declaration": {
+            "name": "UIButton",
+            "module": "src/components/UIButton/UIButton.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UICard/UICard.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Default"
+        },
+        {
+          "kind": "variable",
+          "name": "Small"
+        },
+        {
+          "kind": "variable",
+          "name": "Medium"
+        },
+        {
+          "kind": "variable",
+          "name": "Large"
+        },
+        {
+          "kind": "variable",
+          "name": "Hoverable"
+        },
+        {
+          "kind": "variable",
+          "name": "NotHoverable"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/components/UICard/UICard.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/components/UICard/UICard.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Small",
+          "declaration": {
+            "name": "Small",
+            "module": "src/components/UICard/UICard.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Medium",
+          "declaration": {
+            "name": "Medium",
+            "module": "src/components/UICard/UICard.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Large",
+          "declaration": {
+            "name": "Large",
+            "module": "src/components/UICard/UICard.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Hoverable",
+          "declaration": {
+            "name": "Hoverable",
+            "module": "src/components/UICard/UICard.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "NotHoverable",
+          "declaration": {
+            "name": "NotHoverable",
+            "module": "src/components/UICard/UICard.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UICard/UICard.styles.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/components/UICard/UICard.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UICard/UICard.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "default",
+          "members": [
+            {
+              "kind": "field",
+              "name": "size",
+              "default": "'medium'"
+            },
+            {
+              "kind": "field",
+              "name": "hoverable",
+              "default": "true"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "size",
+              "default": "'medium'",
+              "fieldName": "size"
+            },
+            {
+              "name": "hoverable",
+              "default": "true",
+              "fieldName": "hoverable"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "default",
+            "module": "src/components/UICard/UICard.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "ui-card",
+          "declaration": {
+            "name": "UICard",
+            "module": "src/components/UICard/UICard.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UIModal/UIModal.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Visible"
+        },
+        {
+          "kind": "variable",
+          "name": "Hidden"
+        },
+        {
+          "kind": "variable",
+          "name": "Small"
+        },
+        {
+          "kind": "variable",
+          "name": "Medium"
+        },
+        {
+          "kind": "variable",
+          "name": "Large"
+        },
+        {
+          "kind": "variable",
+          "name": "FullScreen"
+        },
+        {
+          "kind": "variable",
+          "name": "Rounded"
+        },
+        {
+          "kind": "variable",
+          "name": "Squared"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/components/UIModal/UIModal.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Visible",
+          "declaration": {
+            "name": "Visible",
+            "module": "src/components/UIModal/UIModal.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Hidden",
+          "declaration": {
+            "name": "Hidden",
+            "module": "src/components/UIModal/UIModal.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Small",
+          "declaration": {
+            "name": "Small",
+            "module": "src/components/UIModal/UIModal.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Medium",
+          "declaration": {
+            "name": "Medium",
+            "module": "src/components/UIModal/UIModal.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Large",
+          "declaration": {
+            "name": "Large",
+            "module": "src/components/UIModal/UIModal.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "FullScreen",
+          "declaration": {
+            "name": "FullScreen",
+            "module": "src/components/UIModal/UIModal.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Rounded",
+          "declaration": {
+            "name": "Rounded",
+            "module": "src/components/UIModal/UIModal.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Squared",
+          "declaration": {
+            "name": "Squared",
+            "module": "src/components/UIModal/UIModal.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UIModal/UIModal.styles.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/components/UIModal/UIModal.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UIModal/UIModal.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "default",
+          "members": [
+            {
+              "kind": "field",
+              "name": "active",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "rounded",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true"
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "default": "'small'"
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "default": "''"
+            },
+            {
+              "kind": "method",
+              "name": "_toggleActive",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "MouseEvent"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_dispatchActiveEvent",
+              "parameters": [
+                {
+                  "name": "isActive",
+                  "type": {
+                    "text": "string | null"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_handleClickInside",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "MouseEvent"
+                  }
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "active",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "active"
+            },
+            {
+              "name": "rounded",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true",
+              "fieldName": "rounded"
+            },
+            {
+              "name": "size",
+              "default": "'small'",
+              "fieldName": "size"
+            },
+            {
+              "name": "title",
+              "default": "''",
+              "fieldName": "title"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "default",
+            "module": "src/components/UIModal/UIModal.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "ui-modal",
+          "declaration": {
+            "name": "UIModal",
+            "module": "src/components/UIModal/UIModal.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UIProgress/UIProgress.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Primary"
+        },
+        {
+          "kind": "variable",
+          "name": "Secondary"
+        },
+        {
+          "kind": "variable",
+          "name": "Green"
+        },
+        {
+          "kind": "variable",
+          "name": "Yellow"
+        },
+        {
+          "kind": "variable",
+          "name": "Red"
+        },
+        {
+          "kind": "variable",
+          "name": "Empty"
+        },
+        {
+          "kind": "variable",
+          "name": "Full"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/components/UIProgress/UIProgress.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Primary",
+          "declaration": {
+            "name": "Primary",
+            "module": "src/components/UIProgress/UIProgress.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Secondary",
+          "declaration": {
+            "name": "Secondary",
+            "module": "src/components/UIProgress/UIProgress.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Green",
+          "declaration": {
+            "name": "Green",
+            "module": "src/components/UIProgress/UIProgress.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Yellow",
+          "declaration": {
+            "name": "Yellow",
+            "module": "src/components/UIProgress/UIProgress.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Red",
+          "declaration": {
+            "name": "Red",
+            "module": "src/components/UIProgress/UIProgress.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Empty",
+          "declaration": {
+            "name": "Empty",
+            "module": "src/components/UIProgress/UIProgress.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Full",
+          "declaration": {
+            "name": "Full",
+            "module": "src/components/UIProgress/UIProgress.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UIProgress/UIProgress.styles.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/components/UIProgress/UIProgress.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/UIProgress/UIProgress.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "default",
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "default": "0"
+            },
+            {
+              "kind": "field",
+              "name": "color",
+              "default": "'primary'"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "label",
+              "default": "''",
+              "fieldName": "label"
+            },
+            {
+              "name": "value",
+              "default": "0",
+              "fieldName": "value"
+            },
+            {
+              "name": "color",
+              "default": "'primary'",
+              "fieldName": "color"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "default",
+            "module": "src/components/UIProgress/UIProgress.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "ui-progress",
+          "declaration": {
+            "name": "UIProgress",
+            "module": "src/components/UIProgress/UIProgress.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/utils/colors.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "isValidColor",
+          "parameters": [
+            {
+              "name": "value",
+              "type": {
+                "text": "string | null"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "isValidColor",
+          "declaration": {
+            "name": "isValidColor",
+            "module": "src/components/utils/colors.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/utils/storybook.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "loremIpsum",
+          "return": {
+            "type": {
+              "text": "String"
+            }
+          },
+          "parameters": [
+            {
+              "name": "sentences",
+              "default": "10",
+              "type": {
+                "text": "number"
+              }
+            }
+          ],
+          "description": "Return a lorem ipsum string"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "loremIpsum",
+          "declaration": {
+            "name": "loremIpsum",
+            "module": "src/components/utils/storybook.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
