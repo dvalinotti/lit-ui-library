@@ -1,10 +1,14 @@
-import {LitElement, html} from 'lit';
+import {html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
-import theme from '../../styles/theme';
+import {UIComponent} from '../../lib/UIComponent';
 import styles from './UIModal.styles';
 
 @customElement('ui-modal')
-export default class UIModal extends LitElement {
+export default class UIModal extends UIComponent {
+  static get styles() {
+    return [super.styles, styles];
+  }
+
   @property({type: Boolean, reflect: true})
   active: boolean = false;
 
@@ -16,8 +20,6 @@ export default class UIModal extends LitElement {
 
   @property({type: String})
   title = '';
-
-  static styles = [theme, styles];
 
   attributeChangedCallback(
     name: string,

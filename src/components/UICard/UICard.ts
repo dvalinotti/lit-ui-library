@@ -1,11 +1,13 @@
-import {LitElement, html} from 'lit';
-import {customElement, property, query, state} from 'lit/decorators.js';
-import theme from '../../styles/theme';
+import {html} from 'lit';
+import {customElement, property, state} from 'lit/decorators.js';
+import {UIComponent} from '../../lib/UIComponent';
 import styles from './UICard.styles';
 
 @customElement('ui-card')
-export default class UICard extends LitElement {
-  static styles = [theme, styles];
+export default class UICard extends UIComponent {
+  static get styles() {
+    return [super.styles, styles];
+  }
 
   @property({type: String, reflect: true})
   size = 'medium';

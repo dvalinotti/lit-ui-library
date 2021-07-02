@@ -1,16 +1,18 @@
-import {LitElement, html} from 'lit';
+import {html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 import {isValidColor} from '../utils/colors';
-import theme from '../../styles/theme';
 import styles from './UIButton.styles';
+import {UIComponent} from '../../lib/UIComponent';
 
 function isValidSize(value: string | null) {
   return value !== null && ['small', 'medium', 'large'].includes(value);
 }
 
 @customElement('ui-button')
-export default class UIButton extends LitElement {
-  static styles = [theme, styles];
+export default class UIButton extends UIComponent {
+  static get styles() {
+    return [super.styles, styles];
+  }
 
   @property({
     type: String,
